@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.14.11/beautify.js"></script>
+
+    <link rel="stylesheet" href="/css/prism.css">
+    <script src="/scripts/prism.js"></script>
+    <link rel="stylesheet" href="/css/snippet.css">
+    <link rel="stylesheet" href="/css/components.css">
+    
+    <title>Snippets</title>
+
+</head>
+
+<body>
+    <div class="container" id="container">
+        <!--Add snippets : hidden  -->
+        <form id="add-snippet">
+            <p><label for="">Code Snippet:</label></p>
+            <input type="text" id="title">
+            <!-- <input type="text" id="snippet"> -->
+            <textarea id="snippet" name="" rows="4" cols="50"></textarea>
+            <br>
+            <input type="submit" value="Submit" id="submit-snippet">
+        </form>
+        <!-- format -->
+        
+        <!--Folders  -->
+
+        <aside>
+            <h1>file explorer</h1>
+            <div class="files-container" id="files-container"></div>
+        </aside>
+
+
+        <!--Show snippets  -->
+        <div>
+            <button id="get">Show stuff</button>
+            <div class="snippet-container" id="snippet-container"></div>
+        </div>
+    </div>
+    <!-- sliders -->
+
+    <!--Scripts -->
+
+    <script src="/scripts/Snippet.js"></script>
+    <script src="https://kit.fontawesome.com/cb45b82bd7.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

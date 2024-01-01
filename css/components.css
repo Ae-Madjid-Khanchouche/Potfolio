@@ -1,0 +1,30 @@
+
+  button , #submit-snippet{
+      padding: .25em 0.5em;
+      background-color: #353535;
+      border-radius: 5px;
+      border: 1px solid white;
+      color: white;
+      box-shadow: 5px 3px 252525;
+      font-family: inherit;
+  }
+  
+  button:hover {
+      background-color: #fff;
+      color: #252525;
+      font-weight: 600;
+      transition: 200ms;
+  }
+
+  .copy-button {
+      position: absolute;
+      right: 20px;
+      top: 10px;
+  }
+
+
+  .toggle-button {
+      position: absolute;
+      right: 50px;
+      top: 10px;
+  }

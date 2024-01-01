@@ -1,0 +1,48 @@
+
+.navbar {
+    display: flex;
+    width: 1440px;
+    padding: 16px 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    flex: 1 0 0;
+}
+
+.navbar li {
+    font-size: 20px;
+    font-weight: 500;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: var(--Black, #241F27);
+}
+
+.navbar a:visited {
+    color: var(--Black, #241F27);
+}
+
+.navbar_contact {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar_email {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar_socials {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
