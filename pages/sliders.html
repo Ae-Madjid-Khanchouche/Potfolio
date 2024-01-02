@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+    <div class=""></div>
     <div class="todo">
         <div class="todo_date">
             <div class="todo_date_inner_1">
@@ -31,7 +31,7 @@
                 <input type="text" id="todo">
                 <input type="submit" value="Add" id="submit-todo">
             </form>
-            <ul id="thalist">
+            <ul id="todo-lane" class="swim-lane">
 
             </ul>
         </div>
@@ -51,8 +51,8 @@
                 </svg>    
             </div>
         </div> -->
-        <!-- sliders -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <!-- sliders -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script src="https://refreshless.com/nouislider/dist/nouislider.js?v=1550"></script>
     <script src="https://refreshless.com/nouislider/documentation/assets/wNumb.js"></script>
     <!-- icons -->
@@ -64,20 +64,7 @@
     <script type="module" src="/scripts/rough-notation.js"></script>
     <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
     <script src="/scripts/todo.js"></script>
-    <script type="module">
-        import interact from 
-        'https://cdn.interactjs.io/v1.10.26/interactjs/index.js'
-        
-        interact('.todo_item').draggable({
-          listeners: {
-            move (event) {
-              console.log(event.pageX,
-                          event.pageY)
-            }
-          }
-        })
-        </script>
-
-</body>
-
-</html>
+    <script src="/scripts/drag.js"></script>
+            
+        </body>
+    </html>

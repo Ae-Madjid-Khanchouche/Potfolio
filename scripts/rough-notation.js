@@ -1,19 +1,23 @@
-        //        import { annotate } from 'rough-notation';
-        // Or using unpkg
-        import { annotate } from 'https://unpkg.com/rough-notation?module';
+        import {annotate} from 'https://unpkg.com/rough-notation?module';
         setTimeout(() => {
             const listItems = document.querySelectorAll('li');
-            listItems.forEach(function (item) {
+            const toggleList = document.querySelectorAll('.svgContainer');
+            toggleList.forEach(function (item) {
                 // Create an annotation for each item
-                const annotation = RoughNotation.annotate(item, { type: 'strike-through', color: '#222' , top: "12"});
-
-                setInterval(() => {
-                    if(!item.classList.contains("strike")){
+                const annotation = RoughNotation.annotate(item.previousSibling, {
+                    type: 'strike-through',
+                    color: '#222',
+                    top: "12"
+                });
+                item.addEventListener('click', function() {
+                    if (!item.classList.contains("strike")) {
                         annotation.show();
-                    }else{
+                        item.classList.add('strike');
+                    } else {
                         annotation.hide()
+                        item.classList.remove('strike');
                     }
-                }, 1000);
-        // Show the annotation
-    });
-}, 2000);
+                })
+                // Show the annotation
+            });
+        }, 2000);

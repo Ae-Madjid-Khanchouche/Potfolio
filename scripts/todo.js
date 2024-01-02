@@ -43,11 +43,13 @@ function fetchDataFromAPI() {
 
 function createTodoItem(data) {
 
-    var toDoList = document.getElementById("thalist")
+    var toDoList = document.getElementById("todo-lane")
     data.forEach(item => {
     // Create the main container div
     var todoItemDiv = document.createElement('div');
     todoItemDiv.className = 'todo_item';
+    todoItemDiv.classList.add("task");
+    todoItemDiv.setAttribute("draggable", true)
 
     // Create the list item
     var listItem = document.createElement('li');
@@ -88,7 +90,7 @@ function createTodoItem(data) {
     pathUncheck.setAttribute('fill', 'none');
     pathUncheck.setAttribute('stroke', 'black');
     pathUncheck.setAttribute('stroke-width', '50');
-    pathUncheck.setAttribute('d', 'M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0');
+    pathUncheck.setAttribute('d', 'M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416');
 
     svgUncheck.appendChild(pathUncheck);
     svgContainer.appendChild(svgUncheck);
