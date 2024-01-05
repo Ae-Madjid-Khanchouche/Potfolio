@@ -1,6 +1,6 @@
+        
         import {annotate} from 'https://unpkg.com/rough-notation?module';
         setTimeout(() => {
-            const listItems = document.querySelectorAll('li');
             const toggleList = document.querySelectorAll('.svgContainer');
             toggleList.forEach(function (item) {
                 // Create an annotation for each item
