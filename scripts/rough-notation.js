@@ -4,9 +4,9 @@
             const toggleList = document.querySelectorAll('.svgContainer');
             toggleList.forEach(function (item) {
                 // Create an annotation for each item
-                const annotation = RoughNotation.annotate(item.previousSibling, {
+                const annotation = RoughNotation.annotate(item.previousSibling.previousSibling, {
                     type: 'strike-through',
-                    color: '#222',
+                    color: '#36124d',
                     top: "12"
                 });
                 item.addEventListener('click', function() {
